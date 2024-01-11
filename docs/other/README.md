@@ -26,11 +26,28 @@ docker run --name studygolang-db-mysql -e MYSQL_ROOT_PASSWORD=123456 \
     --default-authentication-plugin=mysql_native_password
 ## 
 ## 
+go mod tidy
+make build
+make start
+## 
+## 在浏览器中输入：http://127.0.0.1:8088
+应该就能看到了。
+
+接下来你会看到图形化安装界面，一步步照做吧。
+
+如果之后有出现页面空白，请查看 error.log 是否有错误
 ## 
 ## 
 ## 
+going@ubuntu2204 [08:47:57 PM] [~/workspace/golang/src/github.com/godev2009/studygolang] [study]
+-> % mysql -hlocalhost -uroot -p123456 -P 3380
+## 
+MySQL [(none)]> create database studygolang charset=utf8mb4;
+Query OK, 1 row affected (0.005 sec)
 ## 
 ## 
-## 
+MySQL [(none)]> use studygolang;
+MySQL [(none)]> source config/db.sql;
+MySQL [(none)]> source config/init.sql;
 ## 
 ```

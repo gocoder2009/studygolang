@@ -62,7 +62,7 @@ VALUES
 
 INSERT INTO `friend_link` (`id`, `name`, `url`, `seq`, `logo`, `created_at`)
 VALUES
-	(1, 'Go语言中文网', 'http://studygolang.com', 0, '', '2017-05-21 14:52:07');
+	(1, 'Go语言中文网', 'https://studygolang.com', 0, '', '2017-05-21 14:52:07');
 
 INSERT INTO `user_setting` (`id`, `key`, `value`, `remark`, `created_at`)
 VALUES
