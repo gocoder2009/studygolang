@@ -41,7 +41,7 @@ else
 fi
 
 docker ps -a | grep -q mysqlDB || {
-    docker run --name mysqlDB -e MYSQL_ROOT_PASSWORD=123456 -d mysql
+    docker run --name mysqlDB -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
 }
 docker ps -a | grep -q studygolang-web && {
     docker rm -f studygolang-web
