@@ -12,7 +12,10 @@ npm install --registry=https://registry.npmmirror.com
 ## 
 go get xorm.io/xorm@v1.3.6
 ## 
+## admin admin@163.com 123456
+http://localhost:8088/install
 ## 
+http://localhost:8088/admin
 ## 
 ## 
 ```
