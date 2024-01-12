@@ -31,6 +31,7 @@ docker run --name studygolang-db-mysql -e MYSQL_ROOT_PASSWORD=123456 \
 ## 
 ## 
 go mod tidy
+go work use .
 make build
 make start
 ## 
