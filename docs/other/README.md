@@ -10,6 +10,7 @@ https://registry.npmjs.org/
 npm install --registry=https://registry.npmmirror.com
 ## 
 ## 
+go get xorm.io/xorm@v1.3.6
 ## 
 ## 
 ## 
@@ -42,7 +43,7 @@ make start
 going@ubuntu2204 [08:47:57 PM] [~/workspace/golang/src/github.com/godev2009/studygolang] [study]
 -> % mysql -hlocalhost -uroot -p123456 -P 3380
 ## 
-MySQL [(none)]> create database studygolang charset=utf8mb4;
+MySQL [(none)]> create database studygolang charset utf8mb4 collate utf8mb4_unicode_ci;
 Query OK, 1 row affected (0.005 sec)
 ## 
 ## 
